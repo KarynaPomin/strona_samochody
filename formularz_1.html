@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+</head>
+
+<style>
+.container{
+  margin: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+}
+h1{
+  font-size: 16px;
+}
+h2{
+  font-size: 16px;
+}
+.name_auto{
+  border: dotted 2px;
+  padding: 7px;
+  width: 230px;
+  text-align: right;
+
+}
+.auto{
+  display: flex;
+  justify-content: end;
+}
+.nav_2{
+  border:3px solid #4b64a8;
+  padding: 10px;
+  margin-top: 20px;
+  background: #4b64a87a;
+}
+
+.aksesoria{
+  border: #212c4a solid 3px;
+  margin-top: 10px;
+  padding: 10px;
+  background: #212c4a87;
+}
+
+button{
+  border-radius: 10px;
+  background: #88a9ea;
+  padding: 5px;
+  width: 90px;
+}
+
+.back_b
+{
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -30px;
+}
+
+.klik{
+  margin-top: 50px;
+}
+
+a{
+  text-decoration: none;
+  color: black;
+}
+a:hover{
+  color: #4b64a8;
+}
+
+
+</style>
+
+<body>
+    <div class="container">
+        <div class="nav_1">
+          <div class="auto">
+        </div>
+        <div class="nav_2">
+            <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                <label class="form-check-label" for="flexRadioDefault1">
+                  Leasing
+                </label>
+              </div>
+              <div class="form-check">
+                <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2" checked>
+                <label class="form-check-label" for="flexRadioDefault2">
+                  Gotówka
+                </label>
+              </div>
+
+              <form class="row g-3">
+                <div class="col-md-4">
+                  <label for="validationDefault01" class="form-label">First name</label>
+                  <input type="text" class="form-control" id="validationDefault01" value="Mark" required>
+                </div>
+              
+                <div class="col-md-6">
+                  <label for="validationDefault03" class="form-label">Miejsce odbioru</label>
+                  <input type="text" class="form-control" id="validationDefault03" required>
+                </div>
+              <br>
+              <form action="/action_page.php">
+              <label>Data odbioru za 14 dni od daty zamówienia</label>
+              <input type="date">
+              </form>
+            </form>
+        </div>
+        <div class="aksesoria">
+          <h1>Aksesoria</h1>
+          <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                <h1 id="OponyZimowe">Opony zimowe<h1>
+                <h2>2000 PLN</h2>
+              </label>
+            </div>
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" value="" id="flexCheckIndeterminate">
+              <label class="form-check-label" for="flexCheckIndeterminate">
+                <h1 id="DodatkowyRokGwarancji">Dodatkowy rok gwarancji<h1>
+                <h2>5000 PLN</h2>
+              </label>
+            </div>
+        </div>
+        <div class="klik">
+          <div class="back">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-chevron-left" viewBox="0 0 16 16">
+              <path fill-rule="evenodd" d="M11.354 1.646a.5.5 0 0 1 0 .708L5.707 8l5.647 5.646a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 0 1 .708 0z"/>
+            </svg>
+            <a href="main.html">Powrót do wyboru</a>
+          </div>
+          <div class="back_b">
+            <button><a href="Zakup.html">Zakup</a></button>
+          </div>
+    </div>
+    </div>
+</body>
+</html>

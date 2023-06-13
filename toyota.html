@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toyota</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<style>
+  .container-fluid{
+    border: 3px solid #4b64a8;
+    padding: 10px;
+    background: #191824;
+  }
+
+  .navbar-brand{
+    color:aliceblue;
+  }
+  .nav-link{
+    color: aliceblue;
+  }
+    
+  .nav-link:hover {
+    color: rgb(147, 169, 226);
+  }
+
+  .nav-link active{
+    color: aliceblue;
+  }
+
+  .product{
+    padding: 10px;
+  }
+
+  img{
+    height: 150px;
+  }
+
+  .course{
+  background: #FFF;
+  border-radius: 4px;
+  box-shadow: 0px 5px 40px rgba(0, 0, 0, 0.2);
+  display: inline-block;
+  overflow: hidden;
+  }
+
+  .course-info{
+  color: #FFF;
+  float: left;
+  padding: 10px;
+  width: 35%;
+  }
+
+  .course-progress{
+  float: left;
+  padding: 30px;
+  position: relative;
+  width: 65%;
+  }
+
+  .carta{
+    border: solid;
+    padding-bottom: 230px;
+    margin: 10px;
+  }
+
+  .course-info a{
+  color: #FFF;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.8;
+  margin-top: 30px;
+  text-decoration: none;
+  }
+  
+  .btn{
+  background: #ED474A;
+  border: 0px;
+  outline: none;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2);
+  font-size: 16px;
+  padding: 12px 25px;
+  position: absolute;
+  right: 30px;
+  bottom: -30px;
+  cursor: pointer;
+  letter-spacing: 1px;
+  }
+  
+  a{
+    color: #000000;
+    text-decoration: none;
+  }
+
+  @media screen and (max-width: 1000px) {
+  .course-progress, .course-info{
+  width: 100%;
+  height: 200px;
+  float: none;
+  }
+  .course-info{
+  height: 140px;
+  }
+  .course-info h2{
+  margin: 8px 0px;
+  }
+  .course-info a{
+  margin-top: 10px;
+  }
+  .course-progress h2{
+  margin: 16px 0px;
+  }
+  .btn{
+  left: 30px;
+  }
+  .carta{
+    border: solid;
+    padding-bottom: 60px;
+  }
+
+  }
+
+
+</style>
+<body>
+    <div class="container">
+        <div class="sticky-sm-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary">
+                <div class="container-fluid">
+                    <a class="navbar-brand" href="main.html">Toyota</a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16" style="color: aliceblue;">
+                            <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                    </svg>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link" href="main.html">All</a>
+                      <a class="nav-link" href="bmw.html">BMW</a>
+                      <a class="nav-link" href="citroen.html">Citroen</a>
+                      <a class="nav-link" href="toyota.html">Toyota</a>
+                      <a class="nav-link" href="marcedes.html">Marcedes</a>
+                      <a class="nav-link" href="mazda.html">Mazda</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <div class="product">
+        <div class="carta">
+            <div class="course-info">
+              <img src="corolla_1.jpg">
+          </div>
+          <div class="course-progress">
+            <h2>Corolla 1.8 benzyna</h2>
+              <h6>
+                Marka: Toyota<br>
+                Rocznik: 2021<br>
+                Moc silnika: 98 KM<br>
+                Przebieg: 15.000 km <br>
+              </h6>
+              <button class="btn"><a href="formularz_1.html">120.000PLN</a></button>
+          </div>
+          </div>
+        
+          <div class="carta">
+            <div class="course-info">
+              <img src="carolla_1_6.jpg">
+          </div>
+          <div class="course-progress">
+            <h2>Corolla 1.6 benzyna</h2>
+              <h6>
+                Marka: Toyota<br>
+                Rocznik: 2010<br>
+                Moc silnika: 132 KM<br>
+                Przebieg: 140.000 km <br>
+              </h6>
+              <button class="btn"><a href="formularz_1.html">132.000 PLN</a></button>
+          </div>
+          </div>
+    </div>
+</body>
+</html>
+

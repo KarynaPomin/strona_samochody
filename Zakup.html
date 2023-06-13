@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-2">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+    <title>Document</title>
+</head>
+<style>
+    .container{
+        font-size: 40px;
+        text-align: left;
+        border: solid;
+        max-width: 800px;
+        min-width: 300px;
+        margin: 20px;
+        padding: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .dane{
+        flex: 1 0 200px;
+        font-size: 27px;
+    }
+    
+    .all_dane{
+        display: flex;
+        flex-wrap: nowrap;
+        gap: 10px;
+    }
+
+    a{
+      text-decoration: none;
+      color: black;
+    }
+
+</style>
+<SCRIPT LANGUAGE= "JavaScript" type= "text/javascript">
+    function wyswietlDane()
+    {
+      var data = new Date();
+      var dzien = data.getDate() + 14;
+      var miesiac = data.getMonth() + 1;
+      if (dzien > 30){
+        dzien = dzien - 30;
+        miesiac += 1;
+      }
+      if (dzien < 9){
+        dzien = "0" + dzien;
+      }
+      if (miesiac < 9){
+        miesiac = "0" + miesiac;
+      }
+      var rok = data.getYear();
+      if (rok < 1000){
+        rok = 2000 + rok - 100;
+      }
+      var dzisiaj = dzien + "." + miesiac + "." + rok;
+    
+      var dzienTygodnia = data.getDay();
+      switch(dzienTygodnia){
+        case 0: dzienTygodnia = "niedziela"; break;
+        case 1: dzienTygodnia = "poniedziałek"; break;
+        case 2: dzienTygodnia = "wtorek"; break;
+        case 3: dzienTygodnia = "środa"; break;
+        case 4: dzienTygodnia = "czwartek"; break;
+        case 5: dzienTygodnia = "piątek"; break;
+        case 6: dzienTygodnia = "sobota"; break;
+      }
+    
+      var tekst = "Auto zostanie dostarczone " + dzienTygodnia + ", " + dzisiaj;
+      document.getElementById("dataLayer").innerHTML = tekst;
+    }
+
+</SCRIPT>
+<body onLoad="wyswietlDane()">
+    <div class="container">
+        Dziękujemy za zakup samochodu!<br>
+        <div ID="dataLayer"></div>
+      <br>
+      <a href="main.html"> <- Powrót</a>
+    </div>
+</body>
+</html>
